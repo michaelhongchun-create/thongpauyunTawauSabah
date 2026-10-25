@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thong Pau Yun | Tawau Real Estate Live Queen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef4f3;--ink:#0b2a3a;--card:#fff;--muted:#4d6470;--teal:#12707a;--gold:#d4a63c;--line:#cfe0de;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081c27;--ink:#eaf2f1;--card:#0f2e3d;--muted:#9db5bd;--line:#1d4152}}
+:root[data-theme="dark"]{--bg:#081c27;--ink:#eaf2f1;--card:#0f2e3d;--muted:#9db5bd;--line:#1d4152}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 Manrope,system-ui,sans-serif}
+h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:64px 22px}
+/* banner */
+.hero{background:linear-gradient(135deg,#0b2a3a 0%,#12707a 100%);color:#fff;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;bottom:-110px;width:380px;height:380px;background:var(--gold);opacity:.16;transform:rotate(45deg)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center;position:relative;z-index:1;padding-top:56px;padding-bottom:56px}
+.hero h1{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(2.2rem,6vw,4rem);line-height:1.05}
+.hero h1 span{display:block;font-size:.5em;color:var(--gold);margin-top:10px}
+.hero p{max-width:34ch;opacity:.9}
+.photo{aspect-ratio:4/5;border-radius:140px 140px 18px 18px;border:3px solid var(--gold);background:rgba(255,255,255,.08) center/cover no-repeat;display:grid;place-items:center;text-align:center;font-size:.9rem;padding:20px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.social{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.social a{width:48px;height:48px;border-radius:50%;background:#fff;color:#0b2a3a;display:grid;place-items:center;transition:transform .15s,background .15s}
+.social a:hover,.social a:focus-visible{background:var(--gold);transform:translateY(-3px);outline:none}
+.social svg{width:22px;height:22px;fill:currentColor}
+.stats{display:flex;gap:30px;margin-top:28px;flex-wrap:wrap}
+.stats b{display:block;font:400 2rem/1 "DM Serif Display",Georgia,serif;color:var(--gold)}
+.stats small{font-size:.8rem;opacity:.85}
+/* sections */
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:8px}
+.sub{color:var(--teal);font-weight:600;margin:0 0 26px}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px}
+.toggle button{border:0;background:none;color:var(--ink);padding:8px 20px;font:600 .9rem Manrope,sans-serif;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--teal);color:#fff}
+.story{background:var(--card);border-left:5px solid var(--gold);padding:28px 30px;border-radius:4px 18px 18px 4px;max-width:78ch}
+.story p{margin:0 0 1em}
+.story blockquote{margin:1.2em 0;padding-left:18px;border-left:3px solid var(--teal);color:var(--muted);font-style:italic}
+[lang=zh] .story{font-size:1.05rem;line-height:1.95}
+/* timeline */
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--teal)}
+.tl li{position:relative;padding:0 0 22px 22px}
+.tl li:before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.tl b{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:1.3rem;color:var(--teal)}
+.tl span{display:block}
+/* info */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.links a{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;font-weight:600;transition:border-color .15s}
+.links a:hover,.links a:focus-visible{border-color:var(--gold);outline:none}
+.links small{display:block;font-weight:400;color:var(--muted);word-break:break-all}
+/* video */
+.video{aspect-ratio:16/9;background:#0b2a3a;color:#fff;border-radius:18px;display:grid;place-items:center;text-align:center;padding:20px;overflow:hidden}
+.video iframe{width:100%;height:100%;border:0}
+/* form */
+.band{background:var(--card);border-top:1px solid var(--line)}
+form{display:grid;gap:14px;max-width:620px}
+label{font-weight:600;font-size:.9rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+.opts{display:flex;gap:12px;flex-wrap:wrap}
+.opts label{display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 16px;cursor:pointer;font-weight:600}
+.opts input{width:auto}
+button.send{background:var(--gold);color:#0b2a3a;border:0;border-radius:99px;padding:14px 30px;font:800 1rem Manrope,sans-serif;cursor:pointer;justify-self:start}
+button.send:hover,button.send:focus-visible{filter:brightness(1.08);outline:2px solid var(--teal);outline-offset:2px}
+.note{font-size:.85rem;color:var(--muted);margin:0}
+footer{text-align:center;padding:26px 22px;color:var(--muted);font-size:.85rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.photo{max-width:300px;margin:0 auto;order:-1}.story{padding:22px 20px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<div>
+<h1>Thong Pau Yun<span>Tawau Real Estate Live Queen</span></h1>
+<p>Property agent at The Roof Realty. Buy, sell and rent homes in Tawau with someone who knows the neighbourhoods.</p>
+<!-- EDIT: replace each # with your own link -->
+<nav class="social" aria-label="Social media">
+<a href="https://www.facebook.com/TwuTheRoofRealty" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7H17V3.8c-.3 0-1.3-.2-2.5-.2-2.6 0-4.3 1.6-4.3 4.4v2.5H7.3v3.3h2.9V22z"/></svg></a>
+<a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+<a href="https://bit.ly/2R0O56b" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+<a href="https://wa.me/c/60198537888" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm4.700 13.300c-.2.600-1.200 1.100-1.700 1.200-.4.100-1 .1-1.600-.1-.4-.1-.9-.3-1.500-.6-2.600-1.100-4.300-3.700-4.400-3.900-.1-.2-1-1.300-1-2.500s.6-1.800.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.900c.1.2.1.3 0 .5l-.3.4-.4.4c-.1.1-.3.3-.1.5.2.3.7 1.100 1.500 1.800 1 .9 1.800 1.100 2.100 1.300.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.800.9c.3.1.5.2.5.3.1.2.1.8-.1 1.400z"/></svg></a>
+</nav>
+<div class="stats">
+<div><b>49</b><small>properties sold</small></div>
+<div><b>68</b><small>properties rented</small></div>
+<div><b>600</b><small>Facebook live sessions</small></div>
+</div>
+</div>
+<!-- EDIT: put your photo URL or data: image in src -->
+<div class="photo" id="photo"><span>Your photo goes here</span></div>
+</div>
+</header>
+
+<main>
+<section class="wrap" id="story">
+<h2>My Story</h2>
+<p class="sub">Tawau Real Estate Live Queen, Thong Pau Yun</p>
+<div class="toggle" role="group" aria-label="Language">
+<button type="button" id="bm" aria-pressed="true">Bahasa Melayu</button>
+<button type="button" id="zh" aria-pressed="false">中文</button>
+</div>
+
+<article class="story" id="s-ms" lang="ms">
+<p>Semasa Perintah Kawalan Pergerakan (PKP), adakah anda berbaring di rumah, menonton rancangan TV dan bermain permainan? Atau menunjukkan kemahiran memasak, mengecat dan menghias rumah?</p>
+<p>Tetapi ada seorang ejen hartanah wanita yang mengambil kesempatan daripada tempoh itu untuk kerap muncul di hadapan semua orang, sehingga disyaki meleret skrin. Kita hampir mahu menyekatnya, tetapi tetap membiarkan dia kekal di halaman kita. Lihat berapa lama dia boleh bertahan.</p>
+<p>Sepanjang dua tahun PKP, sejak 1 Mac, siaran langsung Facebook Thong Pau Yun telah mencecah 600 kali, daripada kurang 10 penonton setiap kali kepada kira-kira 30 penonton, sedikit demi sedikit menjadi bukit. Akhirnya beliau menjadi ejen hartanah terkenal di Tawau.</p>
+<p>Di The Roof Realty, beliau telah mencapai dirinya. Ketika ekonomi merudum dan pengangguran melambung, beliau mengekalkan prestasi cemerlang dan memimpin pasukannya ke puncak, menjadi landskap unik dalam dunia hartanah.</p>
+<blockquote>“Saya tidak berpelajaran tinggi. Ketika di darjah enam, sebelum berumur 12 tahun, saya sudah berniaga di gerai tepi laut di Sabindo. Kemudian saya menjual pakaian kanak-kanak di pasar Melayu berhadapan Servay dan berniaga dengan orang Melayu.</blockquote>
+<p>Kerana itu saya mempunyai ramai pelanggan Melayu yang mempercayai saya. Dengan kepercayaan itu, mereka menyerahkan hartanah sendiri dan keluarga mereka kepada saya untuk dijual. Terima kasih kerana mempercayai saya sehingga saya mencapai prestasi hari ini.</p>
+<p>Saya percaya, jika mahu melakukannya, lakukan yang terbaik! Jangan mudah berputus asa. Sebelum memasuki hartanah, saya seorang pengamal insurans, dan pengalaman praktikal di situ sangat berguna dalam industri hartanah. Industri ini memberi saya kebebasan masa dan kepercayaan sepenuhnya. Saya bertuah bertemu pasukan dan sokongan di The Roof Realty yang maju dan mundur bersama.</p>
+<p>Walaupun saya dalam industri hartanah belum sampai tiga tahun (menyertai Mac 2020), sekurang-kurangnya di Tawau semua orang tahu Thong Pau Yun menjual hartanah. Ini langkah pertama kejayaan saya. Pada masa depan, selain meningkatkan prestasi, saya akan terus mengekalkan perkhidmatan berkualiti tinggi untuk pelanggan.”</p>
+<p>Setakat ini, Thong Pau Yun telah membantu pemilik rumah menjual 49 hartanah dan menyewakan 68 hartanah. Dalam dua tahun wabak, beliau memilih untuk berinovasi dan memulakan perniagaan sendiri, merebut peluang dan memberi dirinya transkrip yang indah.</p>
+<p>Pada hari-hari akan datang, Thong Pau Yun, ratu hartanah Tawau, akan terus memberikan anda perkhidmatan hartanah terbaik.</p>
+</article>
+
+<article class="story" id="s-zh" lang="zh" hidden>
+<p>MCO行动管制令期间，您是否自己在家躺平，刷剧，打游戏？身为公务员的你难得可以在家一显厨艺身手？或者在家油漆搞装修？</p>
+<p>但有一位房地产女中介，却利用这一段时间，频繁出现在大家面前，甚至有些刷屏的嫌疑，恨不得把她拉入黑名单屏蔽她的出现，但还是依依不舍留在自己的页面上，看看她可以坚持多长时间？</p>
+<p>殊不知，在MCO两年行动管制令当中，从3月1日起，唐宝云面子书直播高达600次，从每次观看量不到10人到现在观看量在30人次左右，虽然少，但是积少成多，在一次又一次的直播经验当中，她成为斗湖家喻户晓的地产经纪。</p>
+<p>在特富的平台上，她成就了自己，不仅越来越开心漂亮，更重要的是，在经济不景气，失业率飙涨的同时，她能保持一贯出色的业绩，也带领团队一起，登上高峰，在特富的平台上，发光发热，成为房地产一道独特的风景线。</p>
+<blockquote>唐宝云说：“我没有读到什么书，那时候六年级，不到十二岁的时候就在沙宾都（Sabindo）海边档口做买卖，后来在斗湖“实威”（Servay）对面的马来人的巴刹（Bazaar）卖小孩子衣服，和马来人做生意。我流利的马来话是从那个时候学会的。</blockquote>
+<p>“由于马来话说得好，于是我有很多马来客户群体，信任我，把自己和家族的产业都交付与我，让我买卖。感谢大家给予我信任，把产业托付于我，成就我现在的业绩。</p>
+<p>我有一个信念，要么就不做，要做就要做得最好！一定不要轻易放弃。在进入房地产以前，我是保险从业员，也因为保险行业里积累很多的实战经验，让我能在地产行业能够发挥得淋漓尽致，得心应手，不至于手忙脚乱，这有赖于团队给予我自由和信任。我很庆幸在特富遇到共同进退的团队以及支持。</p>
+<p>虽然我从事房地产行业不到三年（2020年3月加入），不说全沙巴，至少在斗湖，大家都认识我唐宝云是卖产业的，这已经是我对自己成功的第一步，在未来的日子里，我希望我的业绩提升之余，能够一直为客户保持优质服务。”</p>
+<p>唐宝云在房地产行业里至今，协助屋主们出售49个产业，出租68间房产。疫情两年，不仅没有成为她的束缚以及形成困扰，反而在疫境之下，她选择自主创新创业，抓住机遇，两年内给予自己一张漂亮的成绩单。</p>
+<p>在未来的日子里，唐宝云，房地产直播女王将继续为您提供最优质的房地产服务。</p>
+</article>
+</section>
+
+<section class="band"><div class="wrap" id="history">
+<h2>My History</h2>
+<p class="sub">The Roof Realty achievements</p>
+<ol class="tl">
+<li><b>2020 Sep</b><span>Top 1 Sabah Achiever</span></li>
+<li><b>2021 Sep</b><span>Top 1 Sabah Achiever</span><span>Top 22 Achievers Malaysia</span></li>
+<li><b>2021 Oct</b><span>Top 28 Achievers Malaysia</span></li>
+<li><b>2021</b><span>Trip qualifier: Harbin</span></li>
+<li><b>2022 Jul</b><span>Top 1 Sabah Achiever</span><span>Top 13 Achievers Malaysia</span></li>
+<li><b>2022</b><span>Trip qualifier: Santorini</span></li>
+<li><b>2023</b><span>Trip qualifier: Maldives</span></li>
+<li><b>2024</b><span>Trip qualifier: Philippines Islands</span></li>
+</ol>
+</div></section>
+
+<section class="wrap" id="info">
+<h2>Looking for Tawau Property?</h2>
+<p class="sub">Find and share my listings here</p>
+<div class="links">
+<a href="https://www.facebook.com/TwuTheRoofRealty" target="_blank" rel="noopener">Facebook<small>facebook.com/TwuTheRoofRealty</small></a>
+<a href="https://www.tiktok.@th_t=8kdbt7bQ4jn&_r=1" target="_blank" rel="noopener">TikTok<small>Edit this link in the file</small></a>
+<a href="https://bit.ly/2R0O56b" target="_blank" rel="noopener">YouTube<small>bit.ly/2R0O56b</small></a>
+<a href="https://www.mudah.my/thong-pau-yun" target="_blank" rel="noopener">mudah.my<small>mudah.my/thong-pau-yun</small></a>
+<a href="https://wa.me/c/60198537888" target="_blank" rel="noopener">WhatsApp<small>wa.me/c/60198537888</small></a>
+</div>
+</section>
+
+<section class="wrap" id="video" style="padding-top:0">
+<h2>Watch Me</h2>
+<p class="sub">Property tours and live highlights</p>
+<!-- EDIT: set YT_ID in the script at the bottom to your YouTube video ID -->
+<div class="video" id="vid"><div>Your YouTube video goes here<br><a href="https://bit.ly/2R0O56b" target="_blank" rel="noopener">Open my YouTube channel</a></div></div>
+</section>
+
+<section class="band"><div class="wrap" id="contact">
+<h2>Get in Touch</h2>
+<p class="sub">Tell me what you need and I will reply on WhatsApp</p>
+<form id="f">
+<div class="opts" role="radiogroup" aria-label="Service">
+<label><input type="radio" name="svc" value="Real Estate Service" checked>Real Estate Service</label>
+<label><input type="radio" name="svc" value="Join Team">Join Team</label>
+</div>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+<label>Message<textarea name="msg" rows="5" required></textarea></label>
+<button class="send" type="submit">Send on WhatsApp</button>
+<p class="note">Your message opens in WhatsApp, ready to send to me.</p>
+</form>
+</div></section>
+</main>
+
+<footer>Thong Pau Yun, The Roof Realty, Tawau, Sabah</footer>
+
+<script>
+var YT_ID="";            // e.g. "dQw4w9WgXcQ"
+var PHOTO="";            // your photo URL or data: image
+var WA="60198537888";
+var ms=document.getElementById("s-ms"),zh=document.getElementById("s-zh"),b1=document.getElementById("bm"),b2=document.getElementById("zh");
+function lang(z){ms.hidden=z;zh.hidden=!z;b1.setAttribute("aria-pressed",!z);b2.setAttribute("aria-pressed",z)}
+b1.onclick=function(){lang(false)};b2.onclick=function(){lang(true)};
+if(PHOTO){document.getElementById("photo").innerHTML='<img alt="Thong Pau Yun" src="'+PHOTO+'">'}
+if(YT_ID){document.getElementById("vid").innerHTML='<iframe src="https://www.youtube.com/embed/'+YT_ID+'" title="YouTube video" allowfullscreen></iframe>'}
+document.getElementById("f").onsubmit=function(e){e.preventDefault();var d=new FormData(e.target);
+var t="Service: "+d.get("svc")+"\nName: "+d.get("name")+"\nEmail: "+d.get("email")+"\nPhone: "+d.get("phone")+"\nMessage: "+d.get("msg");
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t),"_blank")};
+</script>
+</body>
+</html>
